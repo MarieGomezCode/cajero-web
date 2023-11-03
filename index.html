@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPSBANK</title>
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <link rel="icon" href="./assets/img/LogoS.png">
+</head>
+<body>
+    <!--Registrar-->
+    <section id="registro"  class="registroUser"  >
+        <img  class="logo" src="/assets/img/Logo.png" alt="">
+        <input  type="text" placeholder="Usuario"  >
+        <input  type="number" placeholder="Documento o Nit" >
+       
+        <input type="password" placeholder="Contraseña"  >
+        <button class="BotonInicioS" onclick="envioRegistro()" >Registrar</button>
+        <h6>¿Si ya tienes una cuenta? Click <a href="#iniciosesion" onclick="iniciandoSesion()" >Aqui</a></h6>
+
+    </section>
+     
+   
+    
+
+     <!-- Inicicio de sesion -->
+
+    <section class="inicioSesion" id="iniciosesion" >
+        <img  class="logo" src="/assets/img/Logo.png" alt="">
+        <input  type="text" placeholder="Usuario" id="usuario" >
+        <input type="password" placeholder="Contraseña" id="contrasena" >
+        <button class="BotonInicioS" id="botonLogin" >Ingresar</button>
+        <h6>¿Todavia no tienes una Cuenta? Click <a href="#registro" onclick="registrandoUser()" >Aqui</a></h6>
+    </section >
+
+    <!-- Manu Principal -->
+
+     <main class="menuPrincipal" id="menu" style="display: none;" >
+        <section class=principal>
+            
+            <img class="logoMenuPrincipal" src="/assets/img/Logo.png" alt="">
+            <div class="bienvenido">Bienvenido a SHOPSBNAK</div>
+
+            <button  id="consigna" href="#consignar" >
+                <img id="iconos" class="consignar" src="/assets/img/consignar.png" alt="">
+                Depositar
+            </button>
+            <button id="retira" href="#retirar" >
+                <img  id="iconos" class="retirar" src="/assets/img/retirar.png" alt="">
+                Retirar
+           </button>
+
+            <button id="transfiere" href="#transferir" >
+                <img id="iconos" class="transferir" src="/assets/img/Trasferir.png" alt="">
+                Transferir
+            </button>
+
+            <button id="versaldo" href="#saldo"  >
+                <img id="iconos" class="historial" src="/assets/img/Historial.png" alt="">
+                Consultar Saldo
+            </button>
+        </section>
+        <button class="botonCerrar"  >Cerrar</button>
+    </main> 
+
+    <!-- _________________Menu Retirar_______________________ -->
+
+     <section class="menuRetirar" id="retirar" style="display: none;" >
+        <img class="logoMenuRetirar" src="/assets/img/retirar.png" alt="">
+        <h1 class="retirosTitulo">Retiros</h1>
+        <section class="contenedorRetirar">
+           <!--<select class="cantidadRetiro" name="escogercuenta" id="">
+                <option value="1">Cuenta de Ahorros</option>
+                <option value="2">Cuenta Corriente</option>
+                <option value="3">Ahorro a la Mano</option>
+                <option value="4">Nequi</option>
+                </select>-->
+        <input id="egresos"  class="cantidadRetiro" type="text" placeholder="Cantidad a Retirar">
+        
+        <button onclick="retirarPlata()"  class="botonRetirar">Retirar</button>
+        </section>
+        <button  class="atrasMenuRetirar cerrar"  >Volver Atras</button>
+    </section>  
+
+    <!-- ____________________Menu Consignar____________________ -->
+
+    <section class="menuConsignar" id="consignar" style="display: none;" >
+        <section class="contenedorConsignar">
+        <img class="logoMenuConsignacion" src="/assets/img/consignar.png" alt="">
+        <h1 class="tituloConsignar">Depositar Dinero</h1>
+       <!--<select class="cantidadRetiro" name="tipoDeCuenta" id="">
+        <option value="1">Cuenta de Ahorros</option>
+        <option value="2">Cuenta Corriente</option>
+        <option value="3">Nequi</option>
+        </select>-->
+        <!--<input class="cantidadRetiro" type="text" placeholder="Numero de cuenta">-->
+        <input id="ingresos" class="cantidadRetiro" type="text" placeholder="Valor a Consignar"> 
+        <button onclick="consignarPlata()" class="botonConsignar">Depositar</button>
+        <button class="atrasMenuRetirar cerrar"   >Volver Atras</button>
+        </section>
+    </section> 
+
+    <!-- ____________________Menu Transferir____________________ -->
+
+    <section class="menuTransferir" id="transferir" style="display: none;" >
+        <img class="logoTransferir" src="/assets/img/Trasferir.png" alt="">
+        <h1 class="tituloTransferir">Tranferencia</h1>
+        <section class="contenedorTransferir">
+            <input class="cantidadRetiro" type="text" name="" id="" placeholder="Nombre de quien recibe.">
+           <input class="cantidadRetiro" type="text" placeholder="Documento O NIT.">
+            <select class="cantidadRetiro" name="tipoDeCuenta" id="">
+                <option value="1">Cuenta de Ahorros</option>
+                <option value="2">Cuenta Corriente</option>
+            </select>
+           <input id="numero"  class="cantidadRetiro" type="text" placeholder="Numero de Cuenta">
+            <select class="cantidadRetiro" name="Bancos" id="">
+                <option value="0">Banco</option>
+                <option value="1">Bancolombia</option>
+                <option value="2">Caja social</option>
+                <option value="3">Banco de bogota</option>
+                <option value="4">Davivienda</option>
+                <option value="5">ShopsBank</option>
+            </select>
+            <input id="egresos" class="cantidadRetiro" type="text" placeholder="Valor a Transferir">
+            <button onclick="transferirDinero('senderDocumentNumber')" class="botonTransferir">Transferir</button>
+           
+
+        </section>
+        <button class="atrasMenuRetirar cerrar"  >Volver Atras</button>
+    </section> 
+
+    <!-- ____________________Menu Saldo____________________ -->
+
+    <section class="menuSaldo" id="saldo" style="display: none;">
+        <img class="logoSaldo" src="/assets/img/Historial.png" alt="">
+        <h1>Saldo y Movimientos</h1>
+        <h3>Su saldo es de:</h3>
+        <h1 id="saldos" class="saldo" >0</h1>
+        <button class="atrasMenuRetirar cerrar" >Volver Atras</button>
+    </section> 
+
+    <!-- ____________________Animaciones bolas____________________ -->
+
+    
+    <section class="Animacion">
+        <div class="bola"></div>
+        <div class="bola0"></div>
+        <div class="bola1"></div>
+        <div class="bola2"></div>
+        <div class="bola3"></div>
+        <div class="bola4"></div>
+        <div class="bola5"></div>
+        <div class="bola6"></div>
+        <div class="bola7"></div>
+        <div class="bola8"></div>
+        <div class="bola9"></div>
+        <div class="bola10"></div>
+
+    </section>
+
+    
+
+</html>
+
+    <script src="assets/js/log.js" ></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+body{
+background-color: rgb(255, 255, 254);
+overflow: hidden;
+}
+ .logo{
+  
+  width: 60%;
+  
+}
+
+
+
+
+  .inicioSesion, .registroUser {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 500px;
+    height: 500px;
+    gap: 10px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+
+  
+  
+
+
+.inicioSesion input {
+
+  width: 60%;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid gray;
+
+  
+}
+
+.registroUser input {
+
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 10px;
+  
+}
+
+
+.BotonInicioS{
+  background-color:#0E86D4;
+  color: aliceblue;
+  width: 62%;
+  height: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+
+}
+
+/* //_______________________________________________________________________________________________// */
+/* ___________________Menu Principal________________________ */
+
+
+.menuPrincipal{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width:60%;
+  height: 80vh;
+  display: flex;
+  transform:  translate(35%, 10%);
+  z-index: 3;
+}
+
+.principal{
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.bienvenido{
+  width: 60%;
+  height: 50px;
+  color:#003060;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  
+}
+.logoMenuPrincipal{
+  width: 30%;
+  
+}
+button{
+  background-color:#68BBE3;
+  margin: 5px;
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+#iconos{
+  width: 10%;
+}
+.botonCerrar{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 700px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.botonCerrar:hover{
+  background-color:#003060;
+}
+button:hover{
+  background-color:#003060;
+}
+/* ___________________________________________________________________________________
+
+                      ___________________Menu Retirar____________________________ */
+.menuRetirar{
+background-color: rgb(255, 255, 255);
+width:60%;
+height: 80vh;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+transform:  translate(35%, 10%);
+border-radius: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+
+z-index: 3;
+}
+.logoMenuRetirar{ 
+  width: 10%;                    
+}
+.contenedorRetirar{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.cantidadRetiro{
+  width: 60%;
+  font-size: 20px;
+  height: 35px;
+  border-radius: 5px;
+}
+.botonRetirar{
+  width: 40%;
+  height: 50px;
+}
+.atrasMenuRetirar{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 700px;
+  top: 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ________________________________________________________________________
+______________________Menu Consignacion__________________________ */
+.menuConsignar{
+  background-color: rgb(255, 255, 255);
+  width:60%;
+  height: 90vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  transform:  translate(35%, 10%);
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  
+  
+  z-index: 3;
+
+}
+.contenedorConsignar{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.logoMenuConsignacion{
+  width: 10%;
+}
+.botonConsignar{
+  width: 40%;
+  height: 50px;
+}
+.tituloConsignar{
+  color: #003060;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* ________________________________________________________________________
+______________________Menu Tranferencia__________________________ */
+
+.menuTransferir{
+  background-color: rgb(255, 255, 255);
+width:60%;
+height: 80vh;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+transform:  translate(35%, 10%);
+border-radius: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+.contenedorTransferir{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.logoTransferir{
+  width: 10%;
+}
+.botonTransferir{
+  width: 40%;
+  height: 50px;
+}
+
+/* ________________________________________________________________________
+______________________Menu Saldo__________________________ */
+.menuSaldo{
+  background-color: rgb(255, 255, 255);
+  width:60%;
+  height: 80vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  transform:  translate(35%, 10%);
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+.logoSaldo{
+  width: 10%;
+}
+
+
+
+
+
+ /* ______________________________________________________________________________________________________
+                                 Animacion  */
+
+  .bola {
+    width: 20px;
+    height: 20px;
+    background-color: #003060;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    transform: translate(50%, 50%);
+    animation: moverbola 4s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moverbola {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola0 {
+    width: 30px;
+    height: 30px;
+    background-color: #0E86D4;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    transform: translate(50%, 50%);
+    animation: moverbola 4s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moverbola {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  
+  .bola1 {
+    width: 30px;
+    height: 30px;
+    background-color: #68BBE3;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 5s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola2 {
+    width: 30px;
+    height: 30px;
+    background-color: #003060;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 4.5s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola3 {
+    width: 30px;
+    height: 30px;
+    background-color: #68BBE3;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 6s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola4 {
+    width: 20px;
+    height: 20px;
+    background-color: #0E86D4;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 3.6s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola5 {
+    width: 15px;
+    height: 15px;
+    background-color: #68BBE3;
+    border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 5s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola6 {
+    width: 30px;
+    height: 30px;
+    background-color: #003060;
+    border-radius: 50%;
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 5s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola7 {
+    width: 20px;
+    height: 20px;
+    background-color: #0E86D4;
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 3s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola8 {
+    width: 20px;
+    height: 20px;
+    background-color: #68BBE3;
+    border-radius: 50%;
+    position: absolute;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 3s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola9 {
+    width: 20px;
+    height: 20px;
+    background-color: #0E86D4;
+    border-radius: 50%;
+    position: absolute;
+    left: 97%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 4s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
+  .bola10 {
+    width: 20px;
+    height: 20px;
+    background-color: #003060;
+    border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    animation: moveCircle 6s linear infinite;
+    z-index: -1;
+  }
+  @keyframes moveCircle {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -50px;
+    }
+  }
